@@ -1,0 +1,16 @@
+#signup_form {
+padding: 1em;
+fieldset {border: 1px dotted $grey; padding: 3%;}
+legend {font-size: 2em;}
+input { width: 50%; max-width: 200px;}
+  ul {
+  list-style-type: none;
+  padding: 0.2em;
+    li{ clear: both;
+    margin-bottom: 1em;}
+  }
+}
+
+#comment {
+font-family: "Times New Roman", serif;
+}

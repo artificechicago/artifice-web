@@ -1,0 +1,92 @@
+html{height:100%;}
+body {font: 1em $open;}
+p{margin: 1% 0; line-height:1.9em;}
+a{color:$grey; text-decoration: none;
+    &:hover{color:$lgtblue;}
+}
+strong{font-weight: 700;}
+
+.color {background: rgba($lgtblue,.8); min-height: 100%; padding-bottom: 3%;}
+.rgt{float: right;}
+
+.wrap{
+    background: url('../imgs/artifice_photo.jpg') no-repeat center center fixed; background-size: 100%; background-size: cover; height: 100%;
+}
+
+h2{text-align: center; text-transform: uppercase; font-size: 2em; margin-bottom: 2%;}
+
+header { background: $drkgrey; color: $offwhite; position:fixed; width:100%; z-index:1000; padding-bottom: 1%; margin-bottom: 25px;
+  h1{font:2em $orbit; float: left; a{color:$white; }
+  @media screen and (max-width: 36.5em ) {padding-top: 10px;}
+  }
+  .icon-menu {display: none;}
+  .nav{float: right;
+    ul{
+      li{display: inline-block; list-style: none; padding: 0 15px;
+        a{color:$white; text-decoration: none;
+          &:hover{color:$lgtblue;}
+        }
+      }
+    }
+  }
+
+  @media (min-width:585px) {
+    .nav { display:block !important; }
+}
+
+  @media screen and (max-width: 36.5em ) {
+  .icon-menu {display: block; float:right; color: $white; padding-top: 10px;}
+  .nav {float:none; display:none; clear:both; width: 100%; text-align: center;
+    ul{
+        li{display:block; margin-top: 2%;}
+      }
+    }
+  }
+
+}
+
+.hero{ padding-top: 15%; color:$offwhite; text-align: center; font-weight: 300;
+    h1{font-size:4.5em; margin-bottom: 1%; font-weight: 300;}
+    h2{font-size:1.3em; line-height:1.7em; margin-bottom: 1%; font-weight: 300;}
+}
+.button{ font-size:1.5em; background:$drk; border-radius:10px; padding:10px; display: block; width: 25%; margin: 0 auto;text-transform: uppercase;text-align: center; color:$white;}
+
+.submit { @extend .button;
+margin: 0;
+}
+
+.alt-button{ font-size:1.5em; background:$grey; border-radius:10px; padding:1%; display: block; width: 25%; margin: 0 auto;text-transform: uppercase;text-align: center; color:$white; display: block;
+  &:hover {color:$drk;}
+  @media screen and (max-width: 36.5em ) {font-size:1.2em;}
+}
+
+.about{
+    background: $offwhite; color: $drk; padding-bottom: 2%;
+}
+
+.mission {
+    background: $drk; color:$offwhite; padding-bottom: 2%;
+
+}
+
+.internal {
+    @extend .about;
+    h1{text-align: left; font-size:2em; line-height:1.7em; margin-bottom: 1%; font-weight: 400; text-transform: uppercase;}
+    h2{text-align: left;}
+    padding-top: 55px;
+    min-height: 740px;
+}
+
+footer{
+    background: $lgtblue; padding-bottom: 1%; color:$offwhite;
+    .nav{font-size:.8em; text-transform: uppercase;
+        ul{
+            li{display: inline-block; list-style: none; padding-right: 15px;
+                a{color:$white;
+                    &:hover{color:$blue;}
+                }
+            }
+        }
+    }
+    p{font-size: .8em;}
+}
